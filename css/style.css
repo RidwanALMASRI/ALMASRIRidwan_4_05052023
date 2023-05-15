@@ -2,11 +2,12 @@ header {
   display: flex;
   flex-direction: row;
   gap: 0px;
+  margin: 10px 0px 10px 0px;
 }
 header img {
   display: block;
-  width: 162 px;
-  height: 44px;
+  width: 132 px;
+  height: 30px;
   margin: 14px auto 5px auto;
 }
 header i {
@@ -50,6 +51,21 @@ footer ul a i {
 body {
   margin: 0;
   padding: 0;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  padding: 15px;
+}
+.localisation .__recherche {
+  padding-left: 30%;
+}
+.localisation .__recherche .--zonedetexte {
+  border: 0px;
+  background-color: #EAEAEA;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 /*# sourceMappingURL=style.css.map */
