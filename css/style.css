@@ -102,4 +102,33 @@ body {
   margin: 40px 0px 50px 0px;
 }
 
+.fonctionnement h1 {
+  margin-left: 15px;
+}
+.fonctionnement .numrond {
+  position: absolute;
+  color: white;
+  margin-left: -10px;
+  background-color: #9356DC;
+  padding: 3px 7px 3px 7px;
+  border-radius: 25px 25px 25px 25px;
+}
+.fonctionnement li {
+  align-items: center;
+  width: 85%;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #F6F6F6;
+  padding: 25px 0px 25px 30px;
+  border-radius: 15px;
+}
+.fonctionnement li i {
+  font-size: 20px;
+  color: #7E7E7E;
+  margin-right: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
