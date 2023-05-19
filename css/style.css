@@ -122,6 +122,7 @@ footer ul a i {
 .fonctionnement li {
   align-items: center;
   width: 85%;
+  max-width: 323px;
   list-style-type: none;
   font-weight: 700;
   font-size: 16px;
@@ -139,26 +140,29 @@ footer ul a i {
 
 .restaurant {
   background-color: #EAEAEA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.restaurant .restaurantspan {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 .restaurant h2 {
-  margin-left: -250px;
+  align-items: first baseline;
+  margin-left: 30px;
+  padding-bottom: 20px;
 }
 .restaurant a {
   text-decoration: none;
 }
 .restaurant a article {
-  width: 100%;
   background-color: white;
   border-radius: 15px;
 }
 .restaurant a article img {
-  width: 390px;
+  width: 350px;
   height: 230px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -167,19 +171,19 @@ footer ul a i {
   color: black;
   padding-left: 15px;
   font-size: 1.4em;
+  margin-bottom: 0px;
 }
 .restaurant a article p {
   color: black;
   padding-left: 15px;
   font-size: 1.2em;
   padding-bottom: 15px;
+  margin-top: 0px;
 }
 .restaurant a article i {
   font-size: 30px;
-  position: absolute;
   color: black;
-  margin-top: -87px;
-  margin-left: 325px;
+  margin-left: 295px;
 }
 
 /*# sourceMappingURL=style.css.map */
