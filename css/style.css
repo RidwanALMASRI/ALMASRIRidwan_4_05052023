@@ -21,7 +21,7 @@ header img {
   margin: 14px auto 5px auto;
 }
 header i {
-  font-size: 25px;
+  font-size: 21px;
   margin: 24px 0px 23px 23px;
   color: black;
 }
@@ -146,12 +146,12 @@ footer ul a i {
 .restaurant .restaurantspan {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
 }
 .restaurant h2 {
   align-items: first baseline;
-  margin-left: 30px;
+  margin-left: 16px;
   padding-bottom: 20px;
 }
 .restaurant a {
@@ -163,7 +163,7 @@ footer ul a i {
 }
 .restaurant a article img {
   width: 350px;
-  height: 230px;
+  height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -177,13 +177,34 @@ footer ul a i {
   color: black;
   padding-left: 15px;
   font-size: 1.2em;
-  padding-bottom: 15px;
   margin-top: 0px;
+  margin-bottom: 15px;
+}
+.restaurant a article .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.restaurant a article .description {
+  width: 70%;
 }
 .restaurant a article i {
   font-size: 30px;
   color: black;
-  margin-left: 295px;
+  padding-top: 33px;
+}
+
+.pages header {
+  height: 55px;
+}
+.pages .logoohmyfood {
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.pages .pagesimg {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

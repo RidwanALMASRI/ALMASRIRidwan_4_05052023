@@ -6,14 +6,14 @@
     .restaurantspan {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
         align-items: center;
 
     }
 
    h2 {
     align-items: first baseline;
-    margin-left: 30px;
+    margin-left: 16px;
     padding-bottom: 20px;
 
     }
@@ -27,7 +27,7 @@
         border-radius: 15px;
         img {
             width: 350px;
-            height : 230px ;
+            height : 200px ;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }
@@ -43,15 +43,26 @@
             color: black;
             padding-left: 15px;
             font-size: 1.20em;
-            padding-bottom: 15px;
             margin-top: 0px;
+            margin-bottom: 15px;
 
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .description {
+            width: 70%;
         }
 
         i {
             font-size: 30px;
             color: black;
-            margin-left: 295px;
+            padding-top: 33px;
         }
 
     
