@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Shrikhand";
+  font-weight: 700;
+  src: url(/font/Shrikhand-Regular.ttf) format("woff");
+}
 body {
   margin: 0;
   padding: 0;
@@ -203,8 +208,32 @@ footer ul a i {
   margin-top: 20px;
   margin-bottom: 4px;
 }
+.pages h2 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin-left: 20px;
+}
+.pages #coeurpages {
+  position: absolute;
+  margin-top: -58px;
+  margin-left: 318px;
+  font-size: 28px;
+}
 .pages .pagesimg {
   width: 100%;
+}
+.pages .carte {
+  position: absolute;
+  width: 100%;
+  margin-top: -30px;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.pages footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 1400px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,35 @@
         margin-bottom: 4px;
     }
 
+    h2 {
+        font-family: 'Shrikhand'; 
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    #coeurpages {
+        position: absolute;
+        margin-top: -58px;
+        margin-left: 318px;
+        font-size: 28px;
+    }
+
     .pagesimg {
         width: 100%;
+    }
+
+    .carte {
+        position: absolute;
+        width: 100%;
+        margin-top: -30px; 
+        background-color: white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        margin-top: 1400px;
     }
 }
