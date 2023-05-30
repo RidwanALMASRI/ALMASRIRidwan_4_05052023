@@ -10,7 +10,7 @@
     }
 
     h2 {
-        font-family: 'Shrikhand'; 
+        font-family: 'Shrikhand', cursive;
         font-size: 28px;
         margin-left: 20px;
     }
@@ -21,23 +21,30 @@
         margin-left: 318px;
         font-size: 28px;
     }
-
+    
+    
     .pagesimg {
         width: 100%;
+        object-fit: cover;
+        max-height: 500px;
     }
 
+    .imagehautdepage {
+        margin-bottom: -80px;
+    }
+    
     .carte {
-        position: absolute;
         width: 100%;
-        margin-top: -30px; 
-        background-color: white;
+        position: relative;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
+        background-color: #F6F6F6;
     }
+    
+
+    
 
     footer {
-        position: absolute;
         width: 100%;
-        margin-top: 1400px;
     }
 }

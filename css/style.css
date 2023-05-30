@@ -1,12 +1,8 @@
-@font-face {
-  font-family: "Shrikhand";
-  font-weight: 700;
-  src: url(/font/Shrikhand-Regular.ttf) format("woff");
-}
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 div {
@@ -162,39 +158,40 @@ footer ul a i {
 .restaurant a {
   text-decoration: none;
 }
-.restaurant a article {
+.restaurant article {
   background-color: white;
   border-radius: 15px;
 }
-.restaurant a article img {
+.restaurant article img {
   width: 350px;
   height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
-.restaurant a article h3 {
+.restaurant article h3 {
   color: black;
   padding-left: 15px;
   font-size: 1.4em;
   margin-bottom: 0px;
 }
-.restaurant a article p {
+.restaurant article p {
   color: black;
   padding-left: 15px;
   font-size: 1.2em;
   margin-top: 0px;
   margin-bottom: 15px;
 }
-.restaurant a article .box {
+.restaurant article .box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 70px;
 }
-.restaurant a article .description {
-  width: 70%;
+.restaurant article .description {
+  width: 100%;
 }
-.restaurant a article i {
+.restaurant article i {
   font-size: 30px;
   color: black;
   padding-top: 33px;
@@ -209,7 +206,7 @@ footer ul a i {
   margin-bottom: 4px;
 }
 .pages h2 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   font-size: 28px;
   margin-left: 20px;
 }
@@ -221,19 +218,21 @@ footer ul a i {
 }
 .pages .pagesimg {
   width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+.pages .imagehautdepage {
+  margin-bottom: -80px;
 }
 .pages .carte {
-  position: absolute;
   width: 100%;
-  margin-top: -30px;
-  background-color: white;
+  position: relative;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-color: #F6F6F6;
 }
 .pages footer {
-  position: absolute;
   width: 100%;
-  margin-top: 1400px;
 }
 
 /*# sourceMappingURL=style.css.map */
