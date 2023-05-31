@@ -84,7 +84,7 @@ footer ul a i {
   background: linear-gradient(180deg, #FF79DA, #9356DC 100%);
 }
 
-#Explorer {
+.bouttonrose {
   margin: 40px 0px 50px 0px;
 }
 
@@ -122,7 +122,7 @@ footer ul a i {
 }
 .fonctionnement li {
   align-items: center;
-  width: 85%;
+  width: 75%;
   max-width: 323px;
   list-style-type: none;
   font-weight: 700;
@@ -162,8 +162,14 @@ footer ul a i {
   background-color: white;
   border-radius: 15px;
 }
+.restaurant article .nouveau {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 50%;
+  background-color: #99E2D0;
+  padding: 5px;
+}
 .restaurant article img {
-  width: 350px;
   height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -205,58 +211,10 @@ footer ul a i {
   margin-top: 20px;
   margin-bottom: 4px;
 }
-.pages h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 28px;
-  margin-left: 20px;
-}
-.pages h3 {
-  font-size: 16px;
-  font-weight: 300;
-}
-.pages h4 {
-  font-size: 18px;
-  margin: 0px;
-}
-.pages p {
-  font-size: 15px;
-  margin: 0px;
-}
-.pages .menubox {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  padding: 0px 0px 0px 5px;
-}
-.pages .menubox li {
-  list-style-type: none;
-  margin: 8px;
-}
-.pages .menubox .prix {
-  padding-top: 24px;
-  font-weight: 700;
-  font-size: 13px;
-  margin-left: 26px;
-}
-.pages .menubox i {
-  font-size: 20px;
-  color: #FFFFFF;
-  padding: 18px 16px 0px 16px;
-}
-.pages .menubox .validation {
-  margin: 0px;
-  width: auto;
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-}
 .pages #coeurpages {
   position: absolute;
   margin-top: -58px;
-  margin-left: 318px;
+  margin-left: 80%;
   font-size: 28px;
 }
 .pages .pagesimg {
@@ -273,6 +231,74 @@ footer ul a i {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #eaeaea;
+}
+.pages .carte h2 {
+  padding-top: 15px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 28px;
+  margin-left: 5%;
+}
+.pages .carte h3 {
+  width: 12%;
+  padding: 0px 0px 5px 0px;
+  margin-left: 8px;
+  border-bottom: 3px solid #99E2D0;
+  font-size: 16px;
+  font-weight: 300;
+}
+.pages .carte h4 {
+  font-size: 18px;
+  margin: 0px;
+}
+.pages .carte p {
+  font-size: 15px;
+  margin: 0px;
+}
+.pages .carte .menubox {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 0px 0px 0px 5px;
+  box-shadow: 0px 4px 0px 15px rgba(234, 234, 234, 0.1);
+}
+.pages .carte .menubox li {
+  list-style-type: none;
+  margin: 8px;
+}
+.pages .carte .menubox .prix {
+  padding-top: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 26px;
+}
+.pages .carte .menubox i {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 18px 16px 0px 16px;
+}
+.pages .carte .menubox .validation {
+  margin: 0px;
+  width: auto;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+}
+.pages .carte a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 50px 15px 50px;
+  color: white;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #FF79DA, #9356DC 100%);
+}
+.pages .carte .bouttonrose {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pages footer {
   width: 100%;
