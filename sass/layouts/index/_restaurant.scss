@@ -22,17 +22,19 @@
         text-decoration: none;
     }
     article {
+        width: 90%;
         background-color: white;
         border-radius: 15px;
 
         .nouveau {
             position: absolute;
             margin-top: 3%;
-            margin-left: 50%;
+            margin-left: 67%;
             background-color: #99E2D0 ;
             padding: 5px;
         }
         img {
+            width: 100%;
             height : 200px ;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
