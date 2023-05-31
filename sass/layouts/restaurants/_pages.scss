@@ -1,0 +1,114 @@
+.pages {
+    
+    header {
+        height: 55px;
+    }
+    .logoohmyfood {
+        margin-left: 60px;
+        margin-top: 20px; 
+        margin-bottom: 4px;
+    }
+
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0px;
+    }
+
+
+//.menuarticle {
+    
+
+
+
+        .menubox {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+            padding : 0px 0px 0px 5px;
+
+            li {
+                list-style-type: none;
+                margin: 8px;
+    
+            }  
+
+            .prix {
+                padding-top: 24px;
+                font-weight: 700;
+                font-size: 13px;
+                margin-left: 26px;
+            }
+
+            i {
+                font-size: 20px;
+                color: #FFFFFF; 
+                padding: 18px 16px 0px 16px ;
+                
+            }
+            
+            .validation {
+                margin: 0px ;
+                width: auto;
+                background-color:#99E2D0;
+                border-radius: 0px 15px 15px 0px;
+            }
+        
+}
+
+    
+
+    #coeurpages {
+        position: absolute;
+        margin-top: -58px;
+        margin-left: 318px;
+        font-size: 28px;
+    }
+    
+    
+    .pagesimg {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+    }
+
+    .imagehautdepage {
+        margin-bottom: -80px;
+    }
+    
+    .carte {
+        width: 100%;
+        position: relative;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-color: #eaeaea;
+    }
+
+
+    
+
+    
+
+    footer {
+        width: 100%;
+    }
+}
