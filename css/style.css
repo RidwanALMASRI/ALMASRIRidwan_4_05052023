@@ -15,7 +15,6 @@ div {
 .space_spinner {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   z-index: 1;
   display: grid;
@@ -29,9 +28,9 @@ div {
 }
 
 .spinner {
-  width: 50px;
-  height: 50px;
-  border: 10px dashed #99E2D0;
+  width: 300px;
+  height: 300px;
+  border: 50px dashed #99E2D0;
   border-left-color: #99E2D0;
   border-bottom-color: #99E2D0;
   border-right-color: #99E2D0;
@@ -45,6 +44,7 @@ div {
   100% {
     transform: rotate(360deg);
     display: none;
+    opacity: 0;
   }
 }
 @keyframes space_spin {
@@ -54,6 +54,7 @@ div {
   100% {
     scale: 0;
     display: none;
+    opacity: 0;
   }
 }
 header {
@@ -291,8 +292,8 @@ footer ul a i {
 .pages #coeurpages {
   position: absolute;
   color: black;
-  margin-top: -82px;
-  margin-left: 80%;
+  top: 2px;
+  right: 8px;
   font-size: 28px;
 }
 .pages #coeurpages:active {
@@ -300,8 +301,8 @@ footer ul a i {
 }
 .pages #coeurpagesrempli {
   position: absolute;
-  margin-top: -82px;
-  margin-left: 80%;
+  top: 2px;
+  right: 8px;
   font-size: 28px;
   opacity: 0;
 }
@@ -320,15 +321,12 @@ footer ul a i {
   object-fit: cover;
   max-height: 500px;
 }
-.pages .imagehautdepage {
-  margin-bottom: -80px;
-}
 .pages .carte {
-  width: 100%;
   position: relative;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #eaeaea;
+  margin-top: -80px;
 }
 .pages .carte h2 {
   padding-top: 15px;
@@ -356,7 +354,7 @@ footer ul a i {
 .pages .carte .slide-left {
   animation: slide-left 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   animation-delay: calc(0.2s * var(--index));
 }
 @keyframes slide-left {
@@ -369,7 +367,12 @@ footer ul a i {
     transform: translateX(0);
   }
 }
-.pages .carte .menubox {
+.pages .carte i {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px 20px 0px 20px;
+}
+.pages .carte article {
   width: 93%;
   margin-left: auto;
   margin-right: auto;
@@ -379,64 +382,33 @@ footer ul a i {
   background-color: #FFFFFF;
   padding: 0px 0px 0px 5px;
   box-shadow: 0px 4px 0px 15px rgba(234, 234, 234, 0.1);
-}
-.pages .carte .animationvalidation {
-  width: 10%;
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  margin: 0px;
-  gap: 5px;
-}
-.pages .carte li {
-  list-style-type: none;
-  padding: 15px 8px 15px 8px;
-}
-.pages .carte li:hover {
-  cursor: pointer;
-}
-.pages .carte .prix {
-  padding-top: 35px;
-  font-weight: 700;
-  font-size: 15px;
-  padding-left: 110px;
-  transition: padding-left 400ms;
-}
-.pages .carte .prix:active {
-  padding-left: 66px;
-}
-.pages .carte .prix:active + .validation {
-  animation: validation 400ms linear forwards;
-}
-.pages .carte .menu:active + .animationvalidation .prix {
-  padding-left: 66px;
-}
-.pages .carte i {
-  font-size: 20px;
-  color: #FFFFFF;
-  padding: 25px 20px 0px 20px;
+  justify-content: space-between;
   overflow: hidden;
 }
-.pages .carte .validation {
-  margin: 0px;
-  width: auto;
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-  overflow: clip;
-  transform: scaleX(0);
+.pages .carte article:hover {
+  cursor: pointer;
 }
-.pages .carte .menu:active + .animationvalidation .validation {
-  animation: validation 400ms linear forwards;
+.pages .carte article:hover .check {
+  width: 18%;
+  transition: width 400ms;
 }
-@keyframes validation {
-  100% {
-    transform-origin: right;
-    transform: translateX(-50px);
-    transform: scaleX(1);
-  }
+.pages .carte .repas {
+  width: 80%;
+  margin: 10px 8px;
+}
+.pages .carte .price {
+  width: 10%;
+  margin-top: 28px;
+  font-weight: 700;
+}
+.pages .carte .check {
+  background: #99E2D0;
+  width: 0%;
+  transition: width 400ms;
 }
 .pages .carte .bouttonrose {
   width: 50%;
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
