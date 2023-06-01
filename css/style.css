@@ -75,17 +75,22 @@ footer ul a i {
   text-align: center;
   font-size: 18px;
 }
+.reservation .bouttonrose {
+  margin: 40px 0px 50px 0px;
+}
 .reservation a {
   text-decoration: none;
   font-size: 16px;
   padding: 15px 20px 15px 20px;
   color: white;
   border-radius: 25px;
-  background: linear-gradient(180deg, #FF79DA, #9356DC 100%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 0px 0 0px #fff;
+  transition: box-shadow, background, 500ms;
 }
-
-.bouttonrose {
-  margin: 40px 0px 50px 0px;
+.reservation a:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 .localisation {
@@ -169,6 +174,9 @@ footer ul a i {
   margin-left: 67%;
   background-color: #99E2D0;
   padding: 5px;
+  color: #008766;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 .restaurant article img {
   width: 100%;
@@ -199,10 +207,30 @@ footer ul a i {
 .restaurant article .description {
   width: 100%;
 }
-.restaurant article i {
-  font-size: 30px;
-  color: black;
-  padding-top: 33px;
+.restaurant article #coeurpages {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 18px;
+  font-size: 28px;
+}
+.restaurant article #coeurpages:hover {
+  opacity: 0;
+}
+.restaurant article #coeurpagesrempli {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 18px;
+  font-size: 28px;
+  opacity: 0;
+}
+.restaurant article #coeurpagesrempli:active {
+  opacity: 1;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .pages header {
@@ -216,8 +244,27 @@ footer ul a i {
 .pages #coeurpages {
   position: absolute;
   margin-top: -58px;
-  margin-left: 80%;
+  margin-left: 85%;
   font-size: 28px;
+}
+.pages #coeurpages:active {
+  opacity: 0;
+}
+.pages #coeurpagesrempli {
+  position: absolute;
+  margin-top: -58px;
+  margin-left: 85%;
+  font-size: 28px;
+  opacity: 0;
+}
+.pages #coeurpagesrempli:active {
+  opacity: 1;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .pages .pagesimg {
   width: 100%;
@@ -258,7 +305,7 @@ footer ul a i {
   margin: 0px;
 }
 .pages .carte .menubox {
-  width: 80%;
+  width: 93%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -268,26 +315,60 @@ footer ul a i {
   padding: 0px 0px 0px 5px;
   box-shadow: 0px 4px 0px 15px rgba(234, 234, 234, 0.1);
 }
+.pages .carte .menubox .animationvalidation {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  gap: 5px;
+  transition: all 1000ms;
+}
 .pages .carte .menubox li {
   list-style-type: none;
-  margin: 8px;
+  padding: 15px 8px 15px 8px;
+}
+.pages .carte .menubox li:hover {
+  cursor: pointer;
 }
 .pages .carte .menubox .prix {
-  padding-top: 24px;
+  padding-top: 35px;
   font-weight: 700;
-  font-size: 13px;
-  margin-left: 26px;
+  font-size: 15px;
+  padding-left: 66px;
+}
+.pages .carte .menubox .prix:active {
+  padding-left: 39px;
+}
+.pages .carte .menubox .prix:active + .validation {
+  display: list-item;
+}
+.pages .carte .menubox .menu:active + .animationvalidation .prix {
+  padding-left: 39px;
 }
 .pages .carte .menubox i {
   font-size: 20px;
   color: #FFFFFF;
-  padding: 18px 16px 0px 16px;
+  padding: 25px 20px 0px 20px;
 }
 .pages .carte .menubox .validation {
+  position: absolute;
+  opacity: 0;
   margin: 0px;
+  margin-left: 278px;
   width: auto;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  transition: transform 500ms ease-out;
+}
+.pages .carte .menubox .menu:active + .animationvalidation .validation {
+  display: list-item;
+  opacity: 1;
+  transform: translate(-60px, 0px);
+}
+.pages .carte .bouttonrose {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pages .carte a {
   text-decoration: none;
@@ -295,12 +376,13 @@ footer ul a i {
   padding: 15px 50px 15px 50px;
   color: white;
   border-radius: 25px;
-  background: linear-gradient(180deg, #FF79DA, #9356DC 100%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 0px 0 0px #fff;
+  transition: box-shadow, background, 500ms;
 }
-.pages .carte .bouttonrose {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+.pages .carte a:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 .pages footer {
   width: 100%;
