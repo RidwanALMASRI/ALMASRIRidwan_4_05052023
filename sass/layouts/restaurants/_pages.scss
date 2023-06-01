@@ -11,8 +11,9 @@
 
     #coeurpages {
         position: absolute;
-        margin-top: -58px;
-        margin-left: 85%;
+        color: black;
+        margin-top: -82px;
+        margin-left: 80%;
         font-size: 28px;
         
         &:active {
@@ -21,8 +22,8 @@
 
     #coeurpagesrempli {
         position: absolute;
-        margin-top: -58px;
-        margin-left: 85%;
+        margin-top: -82px;
+        margin-left: 80%;
         font-size: 28px;
         opacity: 0;
         
@@ -35,6 +36,7 @@
             -webkit-text-fill-color: transparent;
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
+            transition: 200ms linear;
     }}
     
     
@@ -81,25 +83,52 @@
             font-size: 15px;
             margin: 0px;
         }
-    
-            .menubox {
-                width: 93%;
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-                flex-direction: row;
-                border-radius: 15px;
-                background-color: #FFFFFF;
-                padding : 0px 0px 0px 5px;
-                box-shadow: 0px 4px 0px 15px rgba(234,234,234,0.1) ;
+        
+        .slide-left {
+            animation : slide-left 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation-delay: calc(0.2s * var(--index));
+        }
+
+        @keyframes slide-left {
+
+            75% {
+                opacity: 0.5;
+                transform: translateX(50px);
+            }
+
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .menubox {
+            width: 93%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+            padding : 0px 0px 0px 5px;
+            box-shadow: 0px 4px 0px 15px rgba(234,234,234,0.1) ;
+
+                
+            }
+
+            
 
                 .animationvalidation {
+                    
+                    width: 10%;
                     display: flex;
                     flex-direction: row;
                     padding: 0px;
                     margin: 0px;
                     gap: 5px;
-                    transition: all 1000ms;
                 }
     
                 li {
@@ -115,48 +144,56 @@
                     padding-top: 35px;
                     font-weight: 700;
                     font-size: 15px;
-                    padding-left: 66px; 
+                    padding-left: 110px; 
+                    transition: padding-left 400ms;
                     
                     
                     &:active {
-                    padding-left: 39px;
+                    padding-left: 66px;
                 }
 
                     &:active + .validation {
-                        display: list-item;
+                        animation : validation 400ms linear forwards;
                     }
                 }
 
                 .menu:active + .animationvalidation .prix {
-
-                    padding-left: 39px;
+                    padding-left: 66px;
                 }
     
                 i {
                     font-size: 20px;
                     color: #FFFFFF; 
                     padding: 25px 20px 0px 20px ;
+                    overflow: hidden;
                     
                 }
                 
                 .validation {
-                    position: absolute;
-                    opacity: 0 ;
                     margin: 0px ;
-                    margin-left: 278px;
                     width: auto;
                     background-color:#99E2D0;
                     border-radius: 0px 15px 15px 0px;
-                    transition: transform 500ms ease-out;
+                    overflow: clip;
+                    transform: scaleX(0);
+                    
+                }
+                .menu:active +.animationvalidation .validation {
+                    animation : validation 400ms linear forwards;
                 }
 
-                .menu:active +.animationvalidation .validation {
-                    display: list-item;
-                    opacity: 1;
-                    transform: translate(-60px,0px);
+                @keyframes validation {
+        
+        
+                    100% {
+                        transform-origin: right;
+                        transform: translateX(-50px);
+                        transform: scaleX(1);
+                    }
                 }
-            
-    }
+               
+
+    
 
     
         .bouttonrose {
@@ -193,5 +230,5 @@
 
     footer {
         width: 100%;
-    }
+   }
 }

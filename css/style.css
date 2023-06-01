@@ -1,8 +1,10 @@
 body {
+  z-index: 1;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   position: relative;
+  transition: all 500ms 3000ms linear;
 }
 
 div {
@@ -10,6 +12,50 @@ div {
   padding: 0px;
 }
 
+.space_spinner {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center center;
+}
+.space_spinner {
+  animation: space_spin 3000ms ease-in-out forwards;
+}
+.space_spinner > .spinner {
+  animation: spin infinite 3000ms ease-in-out forwards;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px dashed #99E2D0;
+  border-left-color: #99E2D0;
+  border-bottom-color: #99E2D0;
+  border-right-color: #99E2D0;
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    display: none;
+  }
+}
+@keyframes space_spin {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+    display: none;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -231,6 +277,7 @@ footer ul a i {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  transition: all 200ms linear;
 }
 
 .pages header {
@@ -243,8 +290,9 @@ footer ul a i {
 }
 .pages #coeurpages {
   position: absolute;
-  margin-top: -58px;
-  margin-left: 85%;
+  color: black;
+  margin-top: -82px;
+  margin-left: 80%;
   font-size: 28px;
 }
 .pages #coeurpages:active {
@@ -252,8 +300,8 @@ footer ul a i {
 }
 .pages #coeurpagesrempli {
   position: absolute;
-  margin-top: -58px;
-  margin-left: 85%;
+  margin-top: -82px;
+  margin-left: 80%;
   font-size: 28px;
   opacity: 0;
 }
@@ -265,6 +313,7 @@ footer ul a i {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  transition: 200ms linear;
 }
 .pages .pagesimg {
   width: 100%;
@@ -304,6 +353,22 @@ footer ul a i {
   font-size: 15px;
   margin: 0px;
 }
+.pages .carte .slide-left {
+  animation: slide-left 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation-delay: calc(0.2s * var(--index));
+}
+@keyframes slide-left {
+  75% {
+    opacity: 0.5;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .pages .carte .menubox {
   width: 93%;
   margin-left: auto;
@@ -315,55 +380,60 @@ footer ul a i {
   padding: 0px 0px 0px 5px;
   box-shadow: 0px 4px 0px 15px rgba(234, 234, 234, 0.1);
 }
-.pages .carte .menubox .animationvalidation {
+.pages .carte .animationvalidation {
+  width: 10%;
   display: flex;
   flex-direction: row;
   padding: 0px;
   margin: 0px;
   gap: 5px;
-  transition: all 1000ms;
 }
-.pages .carte .menubox li {
+.pages .carte li {
   list-style-type: none;
   padding: 15px 8px 15px 8px;
 }
-.pages .carte .menubox li:hover {
+.pages .carte li:hover {
   cursor: pointer;
 }
-.pages .carte .menubox .prix {
+.pages .carte .prix {
   padding-top: 35px;
   font-weight: 700;
   font-size: 15px;
+  padding-left: 110px;
+  transition: padding-left 400ms;
+}
+.pages .carte .prix:active {
   padding-left: 66px;
 }
-.pages .carte .menubox .prix:active {
-  padding-left: 39px;
+.pages .carte .prix:active + .validation {
+  animation: validation 400ms linear forwards;
 }
-.pages .carte .menubox .prix:active + .validation {
-  display: list-item;
+.pages .carte .menu:active + .animationvalidation .prix {
+  padding-left: 66px;
 }
-.pages .carte .menubox .menu:active + .animationvalidation .prix {
-  padding-left: 39px;
-}
-.pages .carte .menubox i {
+.pages .carte i {
   font-size: 20px;
   color: #FFFFFF;
   padding: 25px 20px 0px 20px;
+  overflow: hidden;
 }
-.pages .carte .menubox .validation {
-  position: absolute;
-  opacity: 0;
+.pages .carte .validation {
   margin: 0px;
-  margin-left: 278px;
   width: auto;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  transition: transform 500ms ease-out;
+  overflow: clip;
+  transform: scaleX(0);
 }
-.pages .carte .menubox .menu:active + .animationvalidation .validation {
-  display: list-item;
-  opacity: 1;
-  transform: translate(-60px, 0px);
+.pages .carte .menu:active + .animationvalidation .validation {
+  animation: validation 400ms linear forwards;
+}
+@keyframes validation {
+  100% {
+    transform-origin: right;
+    transform: translateX(-50px);
+    transform: scaleX(1);
+  }
 }
 .pages .carte .bouttonrose {
   width: 50%;
