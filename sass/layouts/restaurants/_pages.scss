@@ -83,8 +83,9 @@
         .slide-left {
             animation : slide-left 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
             opacity: 0;
+            margin-bottom: 20px;
             transform: translateY(-100%);
-            animation-delay: calc(0.2s * var(--index));
+            animation-delay: calc(0.4s * var(--index));
         }
 
         @keyframes slide-left {
@@ -113,6 +114,7 @@
                 
                 article {
                     width: 93%;
+                    max-width: 500px;
                     margin-left: auto;
                     margin-right: auto;
                     display: flex;
@@ -177,7 +179,7 @@
             color: white;
             border-radius: 25px;
             background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-            box-shadow: 0px 0px 0 0px #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             transition: box-shadow, background, 500ms;
         &:hover {
             box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.35);

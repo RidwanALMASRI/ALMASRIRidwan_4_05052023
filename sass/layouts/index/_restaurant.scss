@@ -64,17 +64,21 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 70px;
         }
 
         .description {
-            width: 100%;
+            width: 80%;
+        }
+
+        .coeur {
+            z-index: 1;
+            width: 20%;
         }
 
         #coeurpages {
             position: absolute;
-            margin-top: 32px;
-            margin-left: 18px;
+            margin-top: 30px;
+            margin-left: 0px;
             font-size: 28px;
             
             &:hover {
@@ -83,13 +87,13 @@
     
         #coeurpagesrempli {
             position: absolute;
-            margin-top: 32px;
-            margin-left: 18px;
+            margin-top: 30px;
+            margin-left: 0px;
             font-size: 28px;
             opacity: 0;
             
     
-            &:active {
+            &:hover {
                 opacity: 1;
                 background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                 background-clip: text;
