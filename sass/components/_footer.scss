@@ -1,5 +1,11 @@
 footer {
     background-color: #353535;
+    @include tablets {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 15px;
+        padding: 30px 10px 10px 10px;
+    }
 
     img {
         margin-left: 20px;
@@ -7,6 +13,9 @@ footer {
         width: 110px;
         height: 18px;
         filter: brightness(200);
+        @include tablets {
+            margin-right: 10px;
+        }
     }
     
     ul { 
@@ -17,6 +26,9 @@ footer {
         padding-left: 20px;
         padding-bottom: 20px;
         margin-bottom: 0px;
+        @include tablets {
+            flex-direction: row;
+        }
 
         a {
                 text-decoration: none;

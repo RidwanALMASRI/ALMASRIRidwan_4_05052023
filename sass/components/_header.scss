@@ -1,18 +1,18 @@
 header {
-    display: flex;
-    flex-direction: row;
-    gap: 0px ;
     margin: 10px 0px 10px 0px;
+    height: 30px !important;
 
     img {
-        display: block; 
+        display: block;
         height: 30px; 
         margin: 14px auto 5px auto;
+        
     }
 
-    i {
+    a {
+        position: absolute;
         font-size: 21px;
-        margin: 24px 0px 23px 23px; 
+        margin: 6px 0px 0px 23px;
         color: black;
     }
 }

@@ -123,24 +123,31 @@ div {
   }
 }
 header {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
   margin: 10px 0px 10px 0px;
+  height: 30px !important;
 }
 header img {
   display: block;
   height: 30px;
   margin: 14px auto 5px auto;
 }
-header i {
+header a {
+  position: absolute;
   font-size: 21px;
-  margin: 24px 0px 23px 23px;
+  margin: 6px 0px 0px 23px;
   color: black;
 }
 
 footer {
   background-color: #353535;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    padding: 30px 10px 10px 10px;
+  }
 }
 footer img {
   margin-left: 20px;
@@ -148,6 +155,11 @@ footer img {
   width: 110px;
   height: 18px;
   filter: brightness(200);
+}
+@media screen and (min-width: 768px) {
+  footer img {
+    margin-right: 10px;
+  }
 }
 footer ul {
   display: flex;
@@ -157,6 +169,11 @@ footer ul {
   padding-left: 20px;
   padding-bottom: 20px;
   margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+  }
 }
 footer ul a {
   text-decoration: none;
@@ -225,14 +242,32 @@ footer ul a i {
   font-weight: 550;
 }
 
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    margin: 10px 20px 10px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .fonctionnementbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 1px;
+  }
+}
 .fonctionnement h1 {
   margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement h1 {
+    margin-left: 0px;
+  }
 }
 .fonctionnement .numrond {
   position: absolute;
   color: white;
-  margin-top: 23px;
-  margin-left: -10px;
+  margin-top: 0px;
+  margin-left: -39px;
   background-color: #9356DC;
   padding: 3px 7px 3px 7px;
   border-radius: 25px 25px 25px 25px;
@@ -240,7 +275,7 @@ footer ul a i {
 .fonctionnement li {
   align-items: center;
   width: 85%;
-  max-width: 323px;
+  max-width: 700px;
   list-style-type: none;
   font-weight: 700;
   font-size: 16px;
@@ -249,6 +284,11 @@ footer ul a i {
   background-color: #F6F6F6;
   padding: 25px 0px 25px 30px;
   border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement li {
+    width: 45%;
+  }
 }
 .fonctionnement li i {
   font-size: 20px;
@@ -259,13 +299,20 @@ footer ul a i {
 .restaurant {
   background-color: #EAEAEA;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
-.restaurant .restaurantspan {
+.restaurant .restaurantbox {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .restaurantbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .restaurant h2 {
   align-items: first baseline;
@@ -280,6 +327,11 @@ footer ul a i {
   background-color: white;
   border-radius: 15px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant article {
+    width: 45%;
+  }
+}
 .restaurant article .nouveau {
   position: absolute;
   margin-top: 3%;
@@ -289,6 +341,12 @@ footer ul a i {
   color: #008766;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant article .nouveau {
+    margin-top: 1%;
+    margin-left: 33%;
+  }
 }
 .restaurant article img {
   width: 100%;
@@ -444,7 +502,7 @@ footer ul a i {
 }
 .pages .carte article {
   width: 93%;
-  max-width: 500px;
+  max-width: 674px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
