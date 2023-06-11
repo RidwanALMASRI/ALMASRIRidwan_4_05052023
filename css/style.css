@@ -433,6 +433,11 @@ footer ul a i {
     right: 400px;
   }
 }
+@media screen and (min-width: 2560px) {
+  .pages #coeurpages {
+    right: 800px;
+  }
+}
 .pages #coeurpages:hover {
   opacity: 0;
 }
@@ -451,6 +456,11 @@ footer ul a i {
 @media screen and (min-width: 1440px) {
   .pages #coeurpagesrempli {
     right: 400px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pages #coeurpagesrempli {
+    right: 800px;
   }
 }
 .pages #coeurpagesrempli:hover {
@@ -507,6 +517,11 @@ footer ul a i {
     margin-left: 300px;
   }
 }
+@media screen and (min-width: 2560px) {
+  .pages .carte h2 {
+    margin-left: 700px;
+  }
+}
 .pages .carte h3 {
   width: 40px;
   padding: 0px 0px 5px 0px;
@@ -525,6 +540,11 @@ footer ul a i {
 @media screen and (min-width: 1440px) {
   .pages .carte h3 {
     margin-left: 35px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pages .carte h3 {
+    margin-left: 65px;
   }
 }
 .pages .carte h4 {
@@ -583,6 +603,21 @@ footer ul a i {
   width: 18%;
   transition: width 400ms;
 }
+@media screen and (min-width: 768px) {
+  .pages .carte article:hover .check {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pages .carte article:hover .check {
+    width: 6%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pages .carte article:hover .check {
+    width: 4%;
+  }
+}
 .pages .carte .repas {
   width: 80%;
   margin: 10px 8px;
@@ -616,6 +651,11 @@ footer ul a i {
 @media screen and (min-width: 1440px) {
   .pages .carte .bouttonrose {
     padding-left: 375px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pages .carte .bouttonrose {
+    padding-left: 850px;
   }
 }
 .pages .carte a {

@@ -20,6 +20,9 @@
         @include large_desktop {
             right:400px;
         }
+        @include xlarge_desktop {
+            right: 800px;
+        }
         
         &:hover {
             opacity: 0;
@@ -35,6 +38,9 @@
             right: 250px }
         @include large_desktop {
             right:400px;
+        }
+        @include xlarge_desktop {
+            right: 800px;
         }
         
 
@@ -88,6 +94,9 @@
             @include large_desktop {
                 margin-left: 300px;
             }
+            @include xlarge_desktop {
+                margin-left: 700px;
+            }
         }
     
         h3 {
@@ -104,6 +113,9 @@
             }
             @include large_desktop {
                 margin-left: 35px;
+            }
+            @include xlarge_desktop {
+                margin-left: 65px;
             }
         }
 
@@ -173,6 +185,15 @@
                     &:hover .check {
                         width: 18%;
                         transition: width 400ms;
+                        @include tablets {
+                            width: 10%;
+                        }
+                        @include large_desktop {
+                            width: 6%;
+                        }
+                        @include xlarge_desktop {
+                            width: 4%;
+                        }
                     }
                 }
 
@@ -217,6 +238,9 @@
             }
             @include large_desktop {
                 padding-left: 375px;
+            }
+            @include xlarge_desktop {
+                padding-left: 850px;
             }
         }
 
