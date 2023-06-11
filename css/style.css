@@ -380,24 +380,24 @@ footer ul a i {
   z-index: 1;
   width: 20%;
 }
-.restaurant article #coeurpages {
+.restaurant article .coeurpages {
   color: black;
   position: absolute;
   margin-top: 30px;
   margin-left: 0px;
   font-size: 28px;
 }
-.restaurant article #coeurpages:hover {
+.restaurant article .coeurpages:hover {
   opacity: 0;
 }
-.restaurant article #coeurpagesrempli {
+.restaurant article .coeurpagesrempli {
   position: absolute;
   margin-top: 30px;
   margin-left: 0px;
   font-size: 28px;
   opacity: 0;
 }
-.restaurant article #coeurpagesrempli:hover {
+.restaurant article .coeurpagesrempli:hover {
   opacity: 1;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
