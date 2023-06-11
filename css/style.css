@@ -423,14 +423,14 @@ footer ul a i {
   right: 8px;
   font-size: 28px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .pages #coeurpages {
-    right: 200px;
+    right: 250px;
   }
 }
 @media screen and (min-width: 1440px) {
   .pages #coeurpages {
-    right: 300px;
+    right: 400px;
   }
 }
 .pages #coeurpages:hover {
@@ -443,14 +443,14 @@ footer ul a i {
   font-size: 28px;
   opacity: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .pages #coeurpagesrempli {
-    right: 200px;
+    right: 250px;
   }
 }
 @media screen and (min-width: 1440px) {
   .pages #coeurpagesrempli {
-    right: 300px;
+    right: 400px;
   }
 }
 .pages #coeurpagesrempli:hover {
@@ -476,6 +476,13 @@ footer ul a i {
   background-color: #eaeaea;
   margin-top: -80px;
 }
+@media screen and (min-width: 768px) {
+  .pages .carte {
+    width: 700;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1024px) {
   .pages .carte {
     width: 75%;
@@ -490,9 +497,9 @@ footer ul a i {
   font-size: 28px;
   margin-left: 5%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .pages .carte h2 {
-    margin-left: 200px;
+    margin-left: 175px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -501,7 +508,7 @@ footer ul a i {
   }
 }
 .pages .carte h3 {
-  width: 12%;
+  width: 40px;
   padding: 0px 0px 5px 0px;
   margin-left: 8px;
   border-bottom: 3px solid #99E2D0;
@@ -512,12 +519,12 @@ footer ul a i {
   .pages .carte h3 {
     margin: 0px;
     margin-bottom: 15px;
-    margin-left: 48px;
+    margin-left: 45px;
   }
 }
 @media screen and (min-width: 1440px) {
   .pages .carte h3 {
-    margin-left: 205px;
+    margin-left: 35px;
   }
 }
 .pages .carte h4 {
@@ -564,6 +571,11 @@ footer ul a i {
   justify-content: space-between;
   overflow: hidden;
 }
+@media screen and (min-width: 1440px) {
+  .pages .carte article {
+    max-width: none;
+  }
+}
 .pages .carte article:hover {
   cursor: pointer;
 }
@@ -593,12 +605,12 @@ footer ul a i {
 }
 @media screen and (min-width: 768px) {
   .pages .carte .bouttonrose {
-    padding-left: 250px;
+    padding-left: 190px;
   }
 }
 @media screen and (min-width: 1024px) {
   .pages .carte .bouttonrose {
-    padding-left: 245px;
+    padding-left: 240px;
   }
 }
 @media screen and (min-width: 1440px) {

@@ -14,11 +14,11 @@
         top: 2px;
         right: 8px;
         font-size: 28px;
-        @include desktop {
-            right: 200px;
+        @include tablets {
+            right: 250px; 
         }
         @include large_desktop {
-            right:300px;
+            right:400px;
         }
         
         &:hover {
@@ -31,11 +31,10 @@
         right: 8px;
         font-size: 28px;
         opacity: 0;
-        @include desktop {
-            right: 200px;
-        }
+        @include tablets {
+            right: 250px }
         @include large_desktop {
-            right:300px;
+            right:400px;
         }
         
 
@@ -64,6 +63,12 @@
         border-top-right-radius: 25px;
         background-color: #eaeaea;
         margin-top: -80px;
+        @include tablets {
+            width: 700;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            
         @include desktop {
             width: 75%;
             margin-left: auto;
@@ -77,8 +82,8 @@
             font-weight: 500;
             font-size: 28px;
             margin-left: 5%;
-            @include desktop {
-                margin-left: 200px;
+            @include tablets {
+                margin-left: 175px;
             }
             @include large_desktop {
                 margin-left: 300px;
@@ -86,7 +91,7 @@
         }
     
         h3 {
-            width: 12%;
+            width: 40px;
             padding: 0px 0px 5px 0px;
             margin-left: 8px;
             border-bottom: 3px solid #99E2D0;
@@ -95,10 +100,10 @@
             @include desktop {
                 margin: 0px;
                 margin-bottom: 15px;
-                margin-left: 48px;
+                margin-left: 45px;
             }
             @include large_desktop {
-                margin-left: 205px;
+                margin-left: 35px;
             }
         }
 
@@ -157,6 +162,9 @@
                     box-shadow: 0px 4px 0px 15px rgba(234,234,234,0.1) ;
                     justify-content: space-between;
                     overflow: hidden;
+                    @include large_desktop {
+                        max-width: none;
+                    }
 
                     &:hover {
                         cursor: pointer;
@@ -202,10 +210,10 @@
             margin-right: auto;
 
             @include tablets {
-                padding-left: 250px;
+                padding-left: 190px;
             }
             @include desktop {
-                padding-left: 245px;
+                padding-left: 240px;
             }
             @include large_desktop {
                 padding-left: 375px;
