@@ -637,18 +637,22 @@ footer ul a i {
   text-overflow: ellipsis;
   overflow: hidden;
   width: 350px;
+  transition: width 400ms;
 }
 .pages .carte .repas:hover h4 {
   width: 243px;
+  transition: width 400ms;
 }
 .pages .carte .repas p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 350px;
+  transition: width 400ms;
 }
 .pages .carte .repas:hover p {
   width: 243px;
+  transition: width 400ms;
 }
 
 .pages .carte .price {

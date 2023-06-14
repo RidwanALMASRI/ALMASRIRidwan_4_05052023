@@ -207,20 +207,23 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                     width: 350px;
+                    transition: width 400ms;
                   }
                 .repas:hover h4 {
                     width: 243px;
+                    transition: width 400ms;
                   }
                 .repas p {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     width: 350px;
+                    transition : width 400ms
                   }
                 .repas:hover p {
                     width: 243px;
+                    transition : width 400ms
                   }
-                
 
                 .price {
                     width: 10%;
@@ -230,7 +233,6 @@
                
 
                 .check {
-
                     background: #99E2D0;
                     width: 0%;
                     transition: width 400ms;
