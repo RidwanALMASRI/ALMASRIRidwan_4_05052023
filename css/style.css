@@ -272,9 +272,6 @@ footer ul a i {
   padding: 3px 7px 3px 7px;
   border-radius: 25px 25px 25px 25px;
 }
-.fonctionnement .logohover:hover {
-  color: #9356DC;
-}
 .fonctionnement li {
   align-items: center;
   width: 85%;

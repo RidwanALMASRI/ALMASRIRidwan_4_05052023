@@ -199,8 +199,23 @@
                 }
 
                 .repas {
-                    width: 80%;
+                    width: 250px;
                     margin: 10px 8px;
+                }
+
+                .repas h4 {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                  }
+                .repas p {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                  }
+
+                @include tablets {
+                    width: 80%;
                 }
                 
 
