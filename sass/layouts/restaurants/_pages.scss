@@ -199,24 +199,27 @@
                 }
 
                 .repas {
-                    width: 250px;
+                    width: 80%;
                     margin: 10px 8px;
                 }
-
                 .repas h4 {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    width: 350px;
+                  }
+                .repas:hover h4 {
+                    width: 243px;
                   }
                 .repas p {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    width: 350px;
                   }
-
-                @include tablets {
-                    width: 80%;
-                }
+                .repas:hover p {
+                    width: 243px;
+                  }
                 
 
                 .price {

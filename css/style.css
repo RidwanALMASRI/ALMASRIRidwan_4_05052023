@@ -629,24 +629,28 @@ footer ul a i {
   }
 }
 .pages .carte .repas {
-  width: 250px;
+  width: 80%;
   margin: 10px 8px;
-}
-@media screen and (min-width: 768px) {
-  .pages .carte .repas {
-    width: 80%;
-  }
 }
 .pages .carte .repas h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 350px;
+}
+.pages .carte .repas:hover h4 {
+  width: 243px;
 }
 .pages .carte .repas p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 350px;
 }
+.pages .carte .repas:hover p {
+  width: 243px;
+}
+
 .pages .carte .price {
   width: 10%;
   margin-top: 28px;
