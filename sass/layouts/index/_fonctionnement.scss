@@ -41,10 +41,18 @@
         background-color: #F6F6F6 ;
         padding: 25px 0px 25px 30px ;
         border-radius: 15px;
+        
+        li:hover {
+            box-shadow: 0px 4px 15px 0px #00000026;
+            cursor: pointer;
+        }
 
         @include desktop {
             width: 30%;
+            
         }
+
+        
 
         i {
             font-size: 20px;

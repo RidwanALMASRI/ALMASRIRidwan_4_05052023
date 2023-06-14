@@ -272,6 +272,9 @@ footer ul a i {
   padding: 3px 7px 3px 7px;
   border-radius: 25px 25px 25px 25px;
 }
+.fonctionnement .logohover:hover {
+  color: #9356DC;
+}
 .fonctionnement li {
   align-items: center;
   width: 85%;
@@ -283,8 +286,18 @@ footer ul a i {
   margin-bottom: 50px;
   background-color: #F6F6F6;
   padding: 25px 0px 25px 30px;
+  box-shadow: 0px 4px 15px 0px #00000026;
   border-radius: 15px;
 }
+
+.fonctionnement li:hover {
+  box-shadow: 0px 6px 17px 0px #00000026;
+}
+
+.fonctionnement li:hover .logohover {
+  color: #9356DC;
+}
+
 @media screen and (min-width: 1024px) {
   .fonctionnement li {
     width: 30%;
@@ -619,8 +632,23 @@ footer ul a i {
   }
 }
 .pages .carte .repas {
-  width: 80%;
+  width: 250px;
   margin: 10px 8px;
+}
+@media screen and (min-width: 768px) {
+  .pages .carte .repas {
+    width: 80%;
+  }
+}
+.pages .carte .repas h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pages .carte .repas p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .pages .carte .price {
   width: 10%;
